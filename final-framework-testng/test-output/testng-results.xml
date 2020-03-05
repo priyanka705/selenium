@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Sample test Suite" duration-ms="32679" started-at="2020-03-03T09:35:03Z" finished-at="2020-03-03T09:35:35Z">
+  <suite name="Default suite" duration-ms="32783" started-at="2020-03-05T04:40:37Z" finished-at="2020-03-05T04:41:10Z">
     <groups>
     </groups>
-    <test name="Sample test" duration-ms="32679" started-at="2020-03-03T09:35:03Z" finished-at="2020-03-03T09:35:35Z">
-      <class name="com.training.sanity.tests.LoginTests">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.LoginTests@724af044]" name="setUpBeforeClass" is-config="true" duration-ms="13" started-at="2020-03-03T15:05:03Z" finished-at="2020-03-03T15:05:03Z">
+    <test name="Default test" duration-ms="32783" started-at="2020-03-05T04:40:37Z" finished-at="2020-03-05T04:41:10Z">
+      <class name="com.elearning.test.ELTC_007">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.elearning.test.ELTC_007@724af044]" name="setUpBeforeClass" is-config="true" duration-ms="13" started-at="2020-03-05T10:10:37Z" finished-at="2020-03-05T10:10:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.LoginTests@724af044]" name="setUp" is-config="true" duration-ms="21238" started-at="2020-03-03T15:05:03Z" finished-at="2020-03-03T15:05:24Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.elearning.test.ELTC_007@724af044]" name="setUp" is-config="true" duration-ms="14675" started-at="2020-03-05T10:10:37Z" finished-at="2020-03-05T10:10:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validLoginTest()[pri:0, instance:com.training.sanity.tests.LoginTests@724af044]" name="validLoginTest" duration-ms="9123" started-at="2020-03-03T15:05:24Z" finished-at="2020-03-03T15:05:33Z">
+        <test-method status="PASS" signature="validLoginTest()[pri:0, instance:com.elearning.test.ELTC_007@724af044]" name="validLoginTest" duration-ms="16178" started-at="2020-03-05T10:10:52Z" finished-at="2020-03-05T10:11:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.LoginTests@724af044]" name="tearDown" is-config="true" duration-ms="2270" started-at="2020-03-03T15:05:33Z" finished-at="2020-03-03T15:05:35Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.elearning.test.ELTC_007@724af044]" name="tearDown" is-config="true" duration-ms="1888" started-at="2020-03-05T10:11:08Z" finished-at="2020-03-05T10:11:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.training.sanity.tests.LoginTests -->
-    </test> <!-- Sample test -->
-  </suite> <!-- Sample test Suite -->
+      </class> <!-- com.elearning.test.ELTC_007 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

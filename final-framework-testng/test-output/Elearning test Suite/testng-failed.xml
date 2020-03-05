@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Sample test Suite]">
-  <test name="Sample test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Elearning test Suite]">
+  <test name="Elearning test(failed)">
     <classes>
       <class name="com.elearning.test.ELTC_007">
         <methods>
@@ -12,5 +12,5 @@
         </methods>
       </class> <!-- com.elearning.test.ELTC_007 -->
     </classes>
-  </test> <!-- Sample test(failed) -->
-</suite> <!-- Failed suite [Sample test Suite] -->
+  </test> <!-- Elearning test(failed) -->
+</suite> <!-- Failed suite [Elearning test Suite] -->
