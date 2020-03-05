@@ -44,15 +44,15 @@ public void getMultipleInputElements() {
 	    WebElement we = iter.next();
 	 //   System.out.println(we.toString().contains("@id='title'"));
 	    if(we.toString().contains("@id='title'")) {
-	    	System.out.println("1");
+	   // 	System.out.println("1");
 	    	we.sendKeys("SELENIUM2");
 	    }
 	    if(we.toString().contains("@id='advanced_params'")) {
-	    	System.out.println("2");
+	  //  	System.out.println("2");
 	    	we.click();
 	    }
 	    if(we.toString().contains("add_course_category_code")) {
-	    	System.out.println("3");
+	 //   	System.out.println("3");
 	    //	we.click();
 	    	Select sel=new Select(we);
 	    //	sel.selectByValue("Selenium (AUTOMATIONTEST)");
@@ -60,18 +60,18 @@ public void getMultipleInputElements() {
 	    	sel.selectByIndex(20);
 	    }
 	    if(we.toString().contains("add_course_course_language")) {
-	    	System.out.println("4");
+	  //  	System.out.println("4");
 	    //	we.click();
 	    	Select sel=new Select(we);
 	    	sel.selectByIndex(5);
 	    }
 	    if(we.toString().contains("@id='add_course_wanted_code'")) {
-	    	System.out.println("5");
+	   // 	System.out.println("5");
 	    	we.sendKeys("SE2");
 	    }
 	   
 	    if(we.toString().contains("@id='add_course_submit'")) {
-	    	System.out.println("6");
+	//    	System.out.println("6");
 	    	we.click();
 	    }
 	   // System.out.println(we.getText());
@@ -83,12 +83,7 @@ public void getMultipleInputElements() {
 	}
 @FindAll
 ({
-//	@FindBy(xpath="//input[@type= 'text' and @id='title']"),
-  //  @FindBy(xpath = "//button[@id='advanced_params']"),
- //   @FindBy(id = "add_course_category_code"),
-//    @FindBy(id = "add_course_course_language"),
- //   @FindBy(xpath="//input[@type= 'text' and @id='add_course_wanted_code']"),
- //   @FindBy(xpath = "//button[@id='add_course_submit']")   
+
 	@FindBy(xpath="//a[contains(@href,'course_home')]"),
 	@FindBy(xpath="//iframe[contains(@title,'Rich Text Editor, intro_content')]"),
 	@FindBy(id = "introduction_text_intro_cmdUpdate")
