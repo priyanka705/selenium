@@ -14,19 +14,15 @@ import com.training.generics.ScreenShot;
 import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;
 
-import Project.Createacourse;
 import Project.ElearningHomePage;
-import Project.MessageUpdate;
+import Project.UnsubsribeUser;
 
-public class ELTC_008 {
-	
+public class ELTC_009 {
+
 	private WebDriver driver;
 	private String baseUrl;
 	private ElearningHomePage homePOM;
-	private MessageUpdate messageUpdate;
-	//private MessageUpdate image;
-	//private MessageUpdate icon;
-	//private MessageUpdate title;
+	private UnsubsribeUser unsubscribe;
 	private static Properties properties;
 	private ScreenShot screenShot;
 
@@ -41,7 +37,7 @@ public class ELTC_008 {
 	public void setUp() throws Exception {
 		driver = DriverFactory.getDriver(DriverNames.CHROME);
 		homePOM=new ElearningHomePage(driver);
-		messageUpdate=new MessageUpdate(driver);
+		unsubscribe=new UnsubsribeUser(driver);
 		baseUrl = properties.getProperty("baseURL");
 		screenShot = new ScreenShot(driver); 
 		driver.get(baseUrl);
@@ -58,23 +54,15 @@ public class ELTC_008 {
 		homePOM.sendPassword("Swissfranc@5901");
 		homePOM.clickLoginBtn();
 		screenShot.captureScreenShot("MyCourses");
-		messageUpdate.clickLink();
-		screenShot.captureScreenShot("Description");
-		messageUpdate.clickImage();
-		screenShot.captureScreenShot("Image");
-		messageUpdate.clickIcon();
-		screenShot.captureScreenShot("Icon");
-		messageUpdate.enterTitle();
-		screenShot.captureScreenShot("Title");
-		messageUpdate.enterContaint();
-		screenShot.captureScreenShot("Containt");
-		messageUpdate.saveDescription();
-		screenShot.captureScreenShot("Save");
-		
-		
-		
+		unsubscribe.selectCourse();
+		screenShot.captureScreenShot("selectCourse");
+		unsubscribe.selectUsers();
+		screenShot.captureScreenShot("selectUsers");
+		unsubscribe.selectCheckBox();
+		screenShot.captureScreenShot("selectCheckBox");
+		unsubscribe.unscubscribeUser();
+		screenShot.captureScreenShot("unscubscribeUser");
+
 	
 	}
-	
-
 }
