@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -55,5 +56,6 @@ public class LoginTests {
 		loginPOM.sendPassword("welcome@123");
 		loginPOM.clickLoginBtn(); 
 		screenShot.captureScreenShot("First");
+	//	Reporter.log("Email not available");
 	}
 	}
