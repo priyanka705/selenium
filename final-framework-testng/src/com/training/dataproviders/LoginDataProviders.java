@@ -32,7 +32,8 @@ public class LoginDataProviders {
 	
 	@DataProvider(name = "excel-inputs")
 	public Object[][] getExcelData(){
-		String fileName ="C:/Users/Naveen/Desktop/Testing.xlsx"; 
+		//String fileName ="C:\\Users\\PriyankaPriyadarsini\\Desktop\\Datasheet.xlsx"; 
+		String fileName ="C:\\Users\\PriyankaPriyadarsini\\Desktop\\InvalidDetails.xlsx";
 		return new ApachePOIExcelRead().getExcelContent(fileName); 
 	}
 	
@@ -40,5 +41,11 @@ public class LoginDataProviders {
 	public Object[][] getXLSData(){
 		// ensure you will have the title as first line in the file 
 		return new ReadExcel().getExcelData("C:/Users/Naveen/Desktop/Testing.xls", "Sheet1"); 
+	}
+	@DataProvider(name = "testData")
+	public Object[][] testData(){
+		//String fileName ="C:\\Users\\PriyankaPriyadarsini\\Desktop\\Datasheet.xlsx"; 
+		String fileName ="C:\\Users\\PriyankaPriyadarsini\\Desktop\\InvalidDetails.xlsx"; 
+		return new ApachePOIExcelRead().getExcelContent(fileName); 
 	}
 }

@@ -75,7 +75,7 @@ private WebDriver driver;
 	
 	public void clicksendmailcheckbox() {
 		this.sendmailcheckbox.click();
-		this.sendmailcheckbox.click();
+		
 	}
 	
 	public void clickcorrecttest() {

@@ -19,10 +19,14 @@ import com.training.pom.LoginPOM;
 import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;
 
+import Project.AdminAddMNU;
+import Project.ElearningHomePage;
+
 public class LoginExcelTest {
 	private WebDriver driver;
 	private String baseUrl;
-	private LoginPOM loginPOM;
+	private ElearningHomePage homePOM;
+	private AdminAddMNU administration ;
 	private static Properties properties;
 	private ScreenShot screenShot;
 
@@ -36,7 +40,8 @@ public class LoginExcelTest {
 	@BeforeMethod
 	public void setUp() throws Exception {
 		driver = DriverFactory.getDriver(DriverNames.CHROME);
-		loginPOM = new LoginPOM(driver);
+		homePOM=new ElearningHomePage(driver);
+		administration = new AdminAddMNU(driver);
 		baseUrl = properties.getProperty("baseURL");
 		screenShot = new ScreenShot(driver);
 		// open the browser
@@ -48,12 +53,29 @@ public class LoginExcelTest {
 		driver.quit();
 	}
 
-	@Test(dataProvider = "excel-inputs", dataProviderClass = LoginDataProviders.class)
-	public void loginDBTest(String userName, String password) {
-		loginPOM.sendUserName(userName);
-		loginPOM.sendPassword(password);
-		loginPOM.clickLoginBtn();
-		screenShot.captureScreenShot(userName);
+	@Test
+	public void validLoginTest() throws InterruptedException {
+	homePOM.sendUserName("admin");
+	homePOM.sendPassword("admin@123");
+	homePOM.clickLoginBtn();
+	screenShot.captureScreenShot("administration");
+	administration.clickaddauser();
+	screenShot.captureScreenShot("adduser");
+	
+	}
+	@Test (dataProvider = "testData", dataProviderClass = LoginDataProviders.class)
+	public void loginDBTest(String fieldsname,String firstname, String lastname, String email,String phonenumber,String loginname,String Password)
+	{
+		administration.sendfirstname(firstname);
+	//	administration.captureScreenShot(fieldsname);
+		administration.sendlastname(lastname);
+		administration.sendemail(email);
+		administration.sendphonenumber(phonenumber);
+		administration.sendlogin(loginname);
+		administration.sendpassword(Password);
+	//	AdminAddMNU.clickLoginBtn();
+		
+		
 
 	}
 

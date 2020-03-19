@@ -1,29 +1,213 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="139093" started-at="2020-03-12T11:56:47Z" finished-at="2020-03-12T11:59:06Z">
+  <suite name="Default suite" duration-ms="117320" started-at="2020-03-19T11:43:41Z" finished-at="2020-03-19T11:45:38Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="139093" started-at="2020-03-12T11:56:47Z" finished-at="2020-03-12T11:59:06Z">
-      <class name="com.elearning.test.ELTC_037">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.elearning.test.ELTC_037@724af044]" name="setUpBeforeClass" is-config="true" duration-ms="18" started-at="2020-03-12T17:26:47Z" finished-at="2020-03-12T17:26:47Z">
+    <test name="Default test" duration-ms="117320" started-at="2020-03-19T11:43:41Z" finished-at="2020-03-19T11:45:38Z">
+      <class name="com.elearning.test.ELTC_069">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.elearning.test.ELTC_069@4678c730]" name="setUpBeforeClass" is-config="true" duration-ms="17" started-at="2020-03-19T17:13:41Z" finished-at="2020-03-19T17:13:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.elearning.test.ELTC_037@724af044]" name="setUp" is-config="true" duration-ms="15160" started-at="2020-03-12T17:26:47Z" finished-at="2020-03-12T17:27:02Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.elearning.test.ELTC_069@4678c730]" name="setUp" is-config="true" duration-ms="15832" started-at="2020-03-19T17:13:41Z" finished-at="2020-03-19T17:13:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validLoginTest()[pri:0, instance:com.elearning.test.ELTC_037@724af044]" name="validLoginTest" duration-ms="122027" started-at="2020-03-12T17:27:02Z" finished-at="2020-03-12T17:29:04Z">
+        <test-method status="PASS" signature="loginDBTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.elearning.test.ELTC_069@4678c730]" name="loginDBTest" duration-ms="12723" started-at="2020-03-19T17:13:57Z" data-provider="testData" finished-at="2020-03-19T17:14:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test Data 1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12334]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[mehadi]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[manzoor@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[9876543210]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[manzoor]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[manzoor]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validLoginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.elearning.test.ELTC_037@724af044]" name="tearDown" is-config="true" duration-ms="1866" started-at="2020-03-12T17:29:04Z" finished-at="2020-03-12T17:29:06Z">
+        </test-method> <!-- loginDBTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.elearning.test.ELTC_069@4678c730]" name="tearDown" is-config="true" duration-ms="1834" started-at="2020-03-19T17:14:10Z" finished-at="2020-03-19T17:14:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.elearning.test.ELTC_037 -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.elearning.test.ELTC_069@4678c730]" name="setUp" is-config="true" duration-ms="14288" started-at="2020-03-19T17:14:12Z" finished-at="2020-03-19T17:14:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginDBTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.elearning.test.ELTC_069@4678c730]" name="loginDBTest" duration-ms="13017" started-at="2020-03-19T17:14:26Z" data-provider="testData" finished-at="2020-03-19T17:14:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test Data 2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[alex]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[hales]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[alex]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[9876543211]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[alex]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[alex]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginDBTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.elearning.test.ELTC_069@4678c730]" name="tearDown" is-config="true" duration-ms="1849" started-at="2020-03-19T17:14:39Z" finished-at="2020-03-19T17:14:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.elearning.test.ELTC_069@4678c730]" name="setUp" is-config="true" duration-ms="14093" started-at="2020-03-19T17:14:41Z" finished-at="2020-03-19T17:14:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginDBTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.elearning.test.ELTC_069@4678c730]" name="loginDBTest" duration-ms="12611" started-at="2020-03-19T17:14:55Z" data-provider="testData" finished-at="2020-03-19T17:15:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test Data 3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[george]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[bush]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[george@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[georgebush]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[george]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[george]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginDBTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.elearning.test.ELTC_069@4678c730]" name="tearDown" is-config="true" duration-ms="1840" started-at="2020-03-19T17:15:08Z" finished-at="2020-03-19T17:15:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.elearning.test.ELTC_069@4678c730]" name="setUp" is-config="true" duration-ms="14210" started-at="2020-03-19T17:15:09Z" finished-at="2020-03-19T17:15:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginDBTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.elearning.test.ELTC_069@4678c730]" name="loginDBTest" duration-ms="12475" started-at="2020-03-19T17:15:24Z" data-provider="testData" finished-at="2020-03-19T17:15:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test Data 4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mark]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[angel]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[mark@gmail]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[9876543213]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[mark]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[mark]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginDBTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.elearning.test.ELTC_069@4678c730]" name="tearDown" is-config="true" duration-ms="1840" started-at="2020-03-19T17:15:36Z" finished-at="2020-03-19T17:15:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.elearning.test.ELTC_069 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

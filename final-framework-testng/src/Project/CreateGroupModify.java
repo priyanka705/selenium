@@ -8,12 +8,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class CreateGroupModify {
 private WebDriver driver; 
+private WebDriverWait wait;
 	
 	public CreateGroupModify(WebDriver driver) {
 		this.driver = driver; 
+		wait = new WebDriverWait(driver, 60);
 		PageFactory.initElements(driver, this);
 	}
 	@FindBy(xpath="//a[contains(@href,'ASSNG')]")
