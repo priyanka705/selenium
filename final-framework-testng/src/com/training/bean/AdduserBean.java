@@ -7,11 +7,12 @@ public class AdduserBean {
 	private String phonenumber;
 	private String loginname;
 	private String Password;
+	private String credentials;
 
 	public AdduserBean() {
 	}
 
-	public AdduserBean(String fieldsname,String firstname, String lastname, String email,String phonenumber,String loginname,String Password) {
+	public AdduserBean(String fieldsname,String firstname, String lastname, String email,String phonenumber,String loginname,String Password,String credentials) {
 		super();
 		this.firstname = firstname;
 		this.lastname = lastname;
@@ -19,6 +20,7 @@ public class AdduserBean {
 		this.phonenumber=phonenumber;
 		this.loginname=loginname;
 		this.Password=Password;
+		this.credentials=credentials;
 	}
 
 	public String getFirstName() {
@@ -64,9 +66,16 @@ public class AdduserBean {
 	public void setPassword(String Password) {
 		this.Password = Password;
 	}
+	public String getcredentials() {
+		return credentials;
+	}
+
+	public void setcredentials(String credentials) {
+		this.credentials = credentials;
+	}
 	@Override
 	public String toString() {
-		return "AdduserBean [firstname=" + firstname + ", lastname=" + lastname + ",email=" + email +",phonenumber=" + phonenumber +",loginname=" + loginname +",Password=" + Password +",]";
+		return "AdduserBean [firstname=" + firstname + ", lastname=" + lastname + ",email=" + email +",phonenumber=" + phonenumber +",loginname=" + loginname +",Password=" + Password +"credentials=" + credentials +"]";
 	}
 
 }
